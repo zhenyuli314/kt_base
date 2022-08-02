@@ -8,14 +8,14 @@ package com.lzy.s5
 
  */
 
-class Body(val bodyInfo:String){
+class Body(val bodyInfo: String) {
 
-    fun show(){
+    fun show() {
         println()
     }
 
     //默认情况下：内部的类不能访问外部的类
-    class Heart1{
+    class Heart1 {
         val name = "Heart1"
         fun run() {
 //            println("心脏访问身体信息：$bodyInfo")
@@ -23,9 +23,9 @@ class Body(val bodyInfo:String){
     }
 
     //要增加修饰符 innner 成为内部类才可以访问外部类
-    inner class Heart2{
+    inner class Heart2 {
         val name = "Heart2"
-        fun run(){
+        fun run() {
             println("心脏访问身体信息：$bodyInfo")
         }
     }

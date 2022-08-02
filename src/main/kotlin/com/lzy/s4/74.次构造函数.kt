@@ -1,22 +1,18 @@
 package com.lzy.s4
 
-class KtBase74(_name:String){
-    var name:String = _name
-    var age:Int = 0
+class KtBase74(var name: String, var age: Int) {
 
     //2个参数的次构造函数，必须要调用【主构造函数】或【其他次构造函数】，否则不通过。
-    constructor(_name:String,_age:Int):this(_name){
-        println("2个参数的次构造函数:$_name,$_age")
-        age = _age
+    constructor(_name: String) : this(_name,10) {
+        println("2个参数的次构造函数:$_name,$age")
     }
 
 
-
-    constructor(name:String,age:Int,sex:Char):this(name){
+    constructor(name: String, age: Int, sex: Char) : this(name) {
         println("3个参数的次构造函数")
     }
 
-    fun show(){
+    fun show() {
         println(name)
         println(age)
     }

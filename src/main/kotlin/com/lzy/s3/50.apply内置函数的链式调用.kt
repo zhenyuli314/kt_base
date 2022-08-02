@@ -8,13 +8,16 @@ import java.io.File
  */
 fun main() {
     val info = "ABCDEFG"
-    info.apply {
+    var apply = info.apply {
         println("长度是:${this.length}")
+        this.replace("A", "0")
+
     }.apply {
-        println("最后一个字符是：${info[info.length-1]}")
+        println("最后一个字符是：${info[info.length - 1]}")
     }.apply {
         println("全部转成小写:${info.toLowerCase()}")
     }
+    println(apply)
 
 
     /**
@@ -33,4 +36,5 @@ fun main() {
     }.apply {
         println(readLines())
     }
+
 }

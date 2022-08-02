@@ -6,7 +6,7 @@ fun main() {
 
     //匿名写法1(完整版)
     //这里是声明
-    var predicate: (Char) -> Boolean = {
+    var predicate:  (Char) -> Boolean = {
         it == 'z' //匿名函数只有一个入参时，可以省略参数名，使用it关键字
     }
     //这里是调用

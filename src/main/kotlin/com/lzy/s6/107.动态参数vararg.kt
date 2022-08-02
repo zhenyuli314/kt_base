@@ -1,7 +1,5 @@
 package com.lzy.s6
 
-import java.util.*
-
 class KtBase107<T>(vararg objects: T,var isMap:Boolean){
     //1.out 我们的T只能被读取，不能修改 T只能读取
     private val objArr : Array<out T> = objects
@@ -19,5 +17,4 @@ fun main() {
     var p : KtBase107<Any?> = KtBase107("a", "b", false, 2, null, isMap = true)
     println(p.showObj(4))
     var obj : Any?= p.showObj(3)
-
 }

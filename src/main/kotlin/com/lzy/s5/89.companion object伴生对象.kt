@@ -2,29 +2,30 @@ package com.lzy.s5
 
 /**
 public final class KtBase89 {
-    private static final String info = "info";
-    public static final KtBase89.Companion Companion = new KtBase89.Companion((DefaultConstructorMarker)null);
+private static final String info = "info";
+public static final KtBase89.Companion Companion = new KtBase89.Companion((DefaultConstructorMarker)null);
 
-    public static final class Companion {
-        public final String getInfo() {
-            return KtBase89.info;
-        }
+public static final class Companion {
+public final String getInfo() {
+return KtBase89.info;
+}
 
-        public final void show() {
-            String var1 = "show函数";
-            boolean var2 = false;
-            System.out.println(var1);
-        }
+public final void show() {
+String var1 = "show函数";
+boolean var2 = false;
+System.out.println(var1);
+}
 
-        private Companion() {
-        }
-    }
+private Companion() {
+}
+}
 }
  */
-class KtBase89{  //实际就是静态内部类，然后new一个对象给属性
-    companion object{
+class KtBase89 {  //实际就是静态内部类，然后new一个对象给属性
+
+    companion object {
         val info = "info"
-        fun show(){
+        fun show() {
             println("show函数")
         }
     }

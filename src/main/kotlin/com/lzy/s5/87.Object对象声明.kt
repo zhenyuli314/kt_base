@@ -1,7 +1,7 @@
 package com.lzy.s5
 
 /**
- * 转换成Java代码为：
+转换成Java代码为：
 public final class KtBase87 {
     @NotNull
     private static final String name;
@@ -47,7 +47,6 @@ fun main() {
     /**
      * 注意：KtBase87就是对象，不能加（），因为构造函数已经私有化
      */
-
     println(KtBase87)
     println(KtBase87)
     println(KtBase87)

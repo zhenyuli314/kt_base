@@ -6,7 +6,6 @@ package com.lzy.s6
 val s: String = "abc"
 val String.name: String
     get() = "lzy"
-
 /**
  * 背后源码
  *

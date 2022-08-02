@@ -4,6 +4,7 @@ fun main() {
     var set = setOf<String>("a", "a", "b", "b", "c")
     println(set)
     println(set.elementAt(0))
+
 //    println(set.elementAt(3))//越界会报异常
 
     /**

@@ -4,9 +4,9 @@ package com.lzy.s6
  * 扩展函数：
  */
 
-class KtBase114(val name:String,val age:Int, val sex:Char)
+data class KtBase114(val name:String,val age:Int, val sex:Char)
 
-//对KtBase增加扩展函数
+//对KtBase114增加扩展函数
 fun KtBase114.showInfo() = println("我是${name}，年龄为${age}，性别$sex")
 
 //对一些源码增加扩展函数，默认是public的，在其他类中都可以使用

@@ -26,6 +26,6 @@ class KtBase78{
 
 fun main() {
     var base78 = KtBase78()
-//    base78.load()
+    base78.load()
     base78.show()
 }

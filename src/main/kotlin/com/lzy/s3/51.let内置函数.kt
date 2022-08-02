@@ -24,15 +24,15 @@ with，它不是一个扩展函数。ublic inline fun <T, R> with(receiver: T, b
 let 。public inline fun <T, R> T.let(block: (T) -> R): R 。返回值为函数类型的返回值。
 also。public inline fun T.also(block: (T) -> Unit): T。返回值为 扩展对象
 
- 参考：https://blog.csdn.net/abs625/article/details/109074104
- this的比it的好，一般用apply和run就可以了
+参考：https://blog.csdn.net/abs625/article/details/109074104
+this的比it的好，一般用apply和run就可以了
  */
 fun main() {
     val list = listOf<Int>(1, 2, 3, 4)
     val i = list.let {
         it.first()
     }.let(::println)
-//    println(i)
+    println(i)
 
     println(getMethod(null))
     println(getMethod2("asd"))
@@ -40,10 +40,12 @@ fun main() {
 }
 
 //空值判断(完全版)
-fun getMethod(value:String?):String{
+fun getMethod(value: String?): String {
     return value?.let {
         "欢迎回来${it}"
-    }?:"你传递的是null"
+    } ?: "你传递的是null"
 }
+
 //空值判断(简化版)
-fun getMethod2(value:String?)=value?.let { "欢迎回来${it}" }?:"你传递的是null"
+fun getMethod2(value: String?) =
+    value?.let { "欢迎回来${it}" } ?: "你传递的是null"

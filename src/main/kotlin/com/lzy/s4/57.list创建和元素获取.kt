@@ -7,5 +7,5 @@ fun main() {
     var list = listOf("a", "b", "c", "d")
     println(list[0])
     println(list.getOrElse(4, { "空值" }))
-    println(list.getOrNull(4)?:"你这里是空值")
+    println(list.getOrNull(4) ?: "你这里是空值")
 }

@@ -20,8 +20,14 @@ interface IUSB{
 }
 //推荐写法
 class Mouse( override var name: String = "mouse", override var version: String="1.2") :IUSB{
+    //此构造函数
+    constructor(a:String) : this(a,"123"){
+        println(a)
+    }
+
     override fun insertUSB() : String = "接入了 $name, 版本是 $version"
 }
+
 
 class KeyBoard :IUSB{
     override var name:String = ""

@@ -1,6 +1,8 @@
 package com.lzy.s5
 
-interface KtBase88{
+import org.omg.CORBA.Object
+
+interface KtBase88 {
     fun method1()
     fun method2()
 }
@@ -20,7 +22,7 @@ fun main() {
 
     //对于Java接口或者类。Kt接口没有方法2
     //方法1：对象表达式
-    object: Runnable{
+    object : Runnable {
         override fun run() {
             println("run方法")
         }

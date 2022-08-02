@@ -7,7 +7,7 @@ package com.lzy.s4
 
 class KtBase79 {
     //非懒加载
-//    val result1 = getMyResult()
+    val result1 = getMyResult()
 
     //懒加载
     val result2 by lazy { getMyResult() }
@@ -27,6 +27,7 @@ fun main() {
     /**
      * 体验getMyResult的执行时机：
      */
-//    println(base79.result1)  //在var base79 = KtBase79()时就执行
+    println(base79.result1)  //在var base79 = KtBase79()时就执行
+    Thread.sleep(2000)
     println(base79.result2) //在这调用时才执行
 }

@@ -1,12 +1,14 @@
 package com.lzy.s5
 
 
-data class KtBase92(var name:String,var age:Int){
+data class KtBase92(var name: String, var age: Int) {
     var coreInfo = ""
+
     init {
         println("主构造函数被调用")
     }
-    constructor(name: String):this(name,99){
+
+    constructor(name: String) : this(name, 99) {
         println("次构造函数被调用")
         coreInfo = "增加非常核心的内容信息"
     }

@@ -5,12 +5,12 @@ package com.lzy.s4
  * 用_可以不接受赋值，_不是变量名，是用来过滤解构赋值的
  */
 fun main() {
-    val list = listOf("a","b","c")
-    val(n1,n2,n3) = list
+    val list = listOf("a", "b", "c")
+    val (n1, n2, n3) = list
     print("n1:$n1, n2:$n2, n3:$n3")
 
     println()
-    var(_,n4,n5) = list
+    var (_, n4, n5) = list
     print("n4:$n4, n5:$n5")
 
 }

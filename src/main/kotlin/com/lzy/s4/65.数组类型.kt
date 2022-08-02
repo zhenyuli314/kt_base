@@ -25,5 +25,4 @@ fun main() {
     var arr2 = list.toIntArray()
 
     var files : Array<File> = arrayOf(File("a"), File("b"))
-
 }

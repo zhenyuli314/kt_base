@@ -1,6 +1,6 @@
 package com.lzy.s5
 
-enum class Week{
+enum class Week {
     星期一,
     星期二,
     星期三

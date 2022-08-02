@@ -9,6 +9,7 @@ abstract class Base{
     fun show1(){
         show2("asd")
     }
+    //私有方法只能自己调用，子类也无法使用
     private fun show2(name:String){
         println(name)
     }
@@ -43,5 +44,6 @@ class Imp1:Base(){
 
 fun main() {
     Imp1().show1()
+//    Imp1().show2()  //无法调用，私有方法
     Imp1().showImp1()
 }

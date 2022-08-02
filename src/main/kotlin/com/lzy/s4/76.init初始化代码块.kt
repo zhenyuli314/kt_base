@@ -9,11 +9,12 @@ class KtBase76(name: String) {
     init {
         println("init代码块会拼接到主构造函数的后面！")
     }
+
     constructor(name: String, age: Int) : this(name) {
         println("2个参数的次构造函数被调用。。。")
     }
 
-    fun show(){
+    fun show() {
 //        println(name)//临时参数，用不了。需要二次转换
     }
 }
@@ -21,5 +22,5 @@ class KtBase76(name: String) {
 fun main() {
     KtBase76("lzy")
     println()
-    KtBase76("lzy",12)
+    KtBase76("lzy", 12)
 }

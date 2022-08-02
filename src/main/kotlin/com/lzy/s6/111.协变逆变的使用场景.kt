@@ -12,9 +12,9 @@ class KtBase111<out T>(private val item:T){
 }
 
 //逆变in，set追只能修改，不能给外界获取
-class KtBase112<in T>(){
+class KtBase112<in T>(private var item:T){
     fun set(item:T){
-        println("set 得到一个值：$item")
+        this.item = item
     }
 
     //同样，编译不通过

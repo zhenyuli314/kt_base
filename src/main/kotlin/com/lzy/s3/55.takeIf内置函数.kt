@@ -1,7 +1,7 @@
 package com.lzy.s3
 
 fun main() {
-    val result = checkPermission("root","abcde发、")
+    val result = checkPermission("root", "abcde发、")
     println(result)
 }
 

@@ -20,6 +20,6 @@ fun main() {
     /**
      * 保留3位小数.(四舍五入型)
      */
-    val s = "%.3f".format(num1)
+    val s: String = "%.3f".format(num1)
     println(s)
 }
